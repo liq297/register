@@ -35,25 +35,205 @@ html,body{
     display:block;
     padding:0 31px;
 }
+
+.right_area {
+    width: 160px;
+    margin-left: 40px;
+    color: #777;
+}
+
+.fl {
+    float: left;
+}
+.vender_login {
+    margin-top: 10px;
+}
+.clearfix {
+    zoom: 1;
+}
+.vender_login li {
+    float: left;
+    width: 44px;
+    height: 43px;
+    margin-right: 9px;
+}
+li {
+    list-style: none;
+}
+.vender_icon {
+    display: inline-block;
+    width: 44px;
+    height: 43px;
+    background-position: left top;
+    background-repeat: no-repeat;
+}
+
+a {
+    background-color: transparent;
+    outline: 0;
+    text-decoration: none;
+}
+
+ li.active .icon_phone {
+    background-image: url(https://www.lgstatic.com/passport/static/pc/modules/common/img/icon-phone-active_74d4e76.png);
+    background-position: 4px top;
+    background-repeat: no-repeat;
+    vertical-align: -1px;
+}
+ li .icon_phone {
+    background-image: url(https://www.lgstatic.com/passport/static/pc/modules/common/img/icon-phone_4327f93.png);
+    background-position: 4px top;
+    background-repeat: no-repeat;
+    vertical-align: -1px;
+}
+li.active .icon_mail {
+    background-image: url(https://www.lgstatic.com/passport/static/pc/modules/common/img/icon-mail-active_22ff66f.png);
+    background-position: left top;
+    background-repeat: no-repeat;
+}
+li .icon_mail {
+    background-image: url(https://www.lgstatic.com/passport/static/pc/modules/common/img/icon-mail_dd7169e.png);
+    background-position: left top;
+    background-repeat: no-repeat;
+}
+ .form_body {
+    float: left;
+    display: block;
+}
+ .input_item {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.input {
+    font-size: 14px;
+    position: relative;
+    z-index: 1;
+    height: 44px;
+    line-height: 1;
+    line-height: 44px\9;
+    padding-right: 13px;
+    padding-left: 13px;
+    vertical-align: middle;
+    color: #333;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 2px;
+    outline: 0;
+}
+
+.input {
+    width: 272px;
+}
+.input_white {
+    border-color: #f8f8f8;
+    background-color: #f8f8f8;
+}
+
+input {
+    font-family: Arial,"Hiragino Sans GB","Microsoft Yahei",SimSun;
+}
+button, input{
+    margin: 0;
+    padding: 0;
+    border: 1px solid #ededed;
+    font-family: inherit;
+}
+ .btn_outline {
+    width: 140px;
+    margin-top: 0;
+    margin-right: 15px;
+    color: #999;
+    border-color: #dce4e6;
+    font-size: 14px;
+}
+.btn.btn_outline {
+    color: #fff;
+    background-color: transparent;
+}
+
+
+.box_checkbox {
+    height: 14px;
+    line-height: 14px;
+    z-index: 2;
+    margin-bottom: 10px;
+    padding-left: 5px;
+    color: #777;
+}
+
+.box_checkbox .checkbox_icon {
+    position: absolute;
+    z-index: 4;
+    top: 0;
+    top: 3px\9;
+    left: 0;
+    display: block;
+    width: 13px;
+    height: 16px;
+    background-image: url(https://www.lgstatic.com/passport/static/common/static/img/checkbox_e13d654.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+.btn_green {
+    color: #00b38a;
+    border-color: #00b38a;
+    background-color: #fff;
+}
+.btn_block {
+    display: block;
+    width: 100%;
+}
+li .icon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+}
+i {
+    font-style: normal;
+}
+.vender_login li .icon_sina {
+    background-image: url(https://www.lgstatic.com/passport/static/pc/modules/common/img/icon-sina_9cae1d9.png);
+}
+.vender_login li .icon_tencent {
+    background-image: url(https://www.lgstatic.com/passport/static/pc/modules/common/img/icon-tecent_5870bd4.png);
+}
+
+.vender_login li .icon_wechat {
+    background-image: url(https://www.lgstatic.com/passport/static/pc/modules/common/img/icon-wechat_12ea62f.png);
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+
 .main{width:820px; margin:100px auto 0;}
 .main .login-tab{height:46px;}
 .main .login-tab li{float:left; width:98px; height:46px; line-height:46px; border-radius:3px 3px 0 0; background-color:#e0f3ff; border:1px solid #c3dff0; border-bottom:none; margin-right:8px; color:#116ea9; font-size:16px; text-align:center; cursor:pointer;list-style: none;}
 .main .login-tab .cur{position:relative; background-color:#fff; border-color:#dcdcdc; color:#333; z-index:6; cursor:default;margin-bottom: -1px;}
 .main .login-tab .login{float:right; font-size:13px; color:#116ea9; margin-top:15px;}
-.main .tab-con{position:relative; min-height:300px; background-color:#fff; border:1px solid #dcdcdc; border-radius:0 3px 3px 3px; box-shadow:0 2px 5px 0 #dcdcdc; font-size:14px; padding:10px 0 50px ; z-index:5;}
-.main .tab-con th{width:100px; padding-right:20px; text-align:right; font-weight:normal; color:#333;}
+.main .tab-con{position:relative; min-height:300px; background-color:#fff; border:1px solid #dcdcdc; border-radius:0 3px 3px 3px; box-shadow:0 2px 5px 0 #dcdcdc; font-size:14px; padding:20px 80px 50px ; z-index:5;}
+.main .tab-con th{width:100px; padding-right:20px; text-align:center; font-weight:normal; color:#333;}
 .main .tab-con td{padding:12px 0;}
-.main .tab-con input{border-radius:3px; width:300px; height:35px; box-sizing:border-box;}
 
 .main .tab-con .tip img{display:none; margin:-7px 8px 0 0;}
 .main .tab-con .tip{display: block;width:160px; height:50px; color:#666; line-height:24px; padding:0 0 0 25px; margin:0 0 -30px 0;}
-.main .tab-con .tip-error{background:url(../images/tip-error.png) no-repeat 0 5px;}
-.main .tab-con .tip-right{background:url(../images/tip-right.png) no-repeat 0 5px;}
 
-.main .tab-con .test input:first-child{width:170px; margin-right:5px;}
-.main .tab-con .test input:last-child{width:151px; font-size:12px;}
-.main .tab-con .confirm{height:40px; line-height:40px; font-size:16px;font-family: "微软雅黑"}
-.main .tab-con .vd input{width:205px; margin-right:10px;}
+
+
+
+.tabs{border:0px solid #ffffff;margin:100px;width:300px;padding:20px 40px 50px ;}
+.nav-tabs {
+    border-bottom: none;
+}
+.nav-tabs li{background:#FFFFFF;border:0px solid #ffffff;line-height:30px;padding:0 20px;display:inline-block;border-right:0px solid #ffffff;border-bottom:0px solid #a0b3d6;float:left;}
 
 .main .reg-tip{width: 288px;margin-left: 44px;margin-top: -15px;margin-bottom: 10px;}
 
@@ -62,17 +242,13 @@ html,body{
 .logina-logo{text-align:center; padding:55px 0;}
 .logina-main{position:relative; z-index:5; width:820px; margin:0 auto; background:#fff; border-radius:3px; border:1px solid #c4c4c4;margin-top:100px;  }
 .logina-main .tab-con{float:left; border-radius:3px; box-shadow:none; border:none; }
-.logina-main .tab-con input{width:230px;}
-.logina-main .tab-con input[type=radio]{width:auto;}
-.logina-main .tab-con tr .valid input {width: 50%;margin-right: 5%;}
+
 .logina-main .find{font-size:12px;}
 .logina-main .find td{padding:0;}
-.logina-main .find input{width:auto; margin:-3px 8px 0 0;}
+
 .logina-main .find label{ margin-right:85px;}
-.logina-main .reg{float:right; min-height:290px; padding:120px 40px 0; background:url(../images/login-sep.png) no-repeat 0 50%;}
+.logina-main .reg{text-align: center; min-height:290px; padding:20px 40px 0 120px; background:url(../images/login-sep.png) no-repeat 0 50%;}
 .logina-main .reg p{font-size:17px; font-style:italic; line-height:30px; padding-bottom:30px;}
-.logina-main .reg .reg-btn{display: block;width:172px; height:40px; line-height:38px; border:1px solid #ff7607;  border-radius:2px; background: #ff8c2f; background: -moz-linear-gradient(#ff8c2f, #ff7607); background: -webkit-linear-gradient(#ff8c2f, #ff7607); background: -o-linear-gradient(#ff8c2f, #ff7607); background: linear-gradient(#ff8c2f, #ff7607); color:#fff; text-decoration:none; vertical-align:top; text-align:center; -moz-box-sizing: border-box; box-sizing:border-box; cursor:pointer; color:#fff; font-size:16px; box-shadow:1px 1px 2px 1px #cfcfcf;}
-.logina-main .reg .reg-btn:hover{background: #ff7607; background: -moz-linear-gradient(#ff7607, #ff8c2f); background: -webkit-linear-gradient(#ff7607, #ff8c2f); background: -o-linear-gradient(#ff7607, #ff8c2f); background: linear-gradient(#ff7607, #ff8c2f);}
 .logina-main .error-tip{
     color: #DC0000;
     font-size: 14px;
@@ -83,8 +259,7 @@ html,body{
 }
 .rg-con{margin-top:0;}
 .rg-con .login-tab .cur{border-color:#C4C4C4;}
-.rg-con .tab-con .test input:first-child{width:70px;}
-.rg-con .tab-con .vd input{width:135px;}
+
 .rg-con .tab-con{padding-top:50px;}
 
 .client-from label{

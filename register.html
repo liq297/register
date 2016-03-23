@@ -10,10 +10,10 @@
 </head>
 <body>
 <div class="logina-main main clearfix">
-    <div class=" tab-con">
+    <div class="tab-con">
             <ul id="myTab" class="nav nav-tabs">
-                <li class="active"><a href="#cellphone-login" data-toggle="tab">手机号码注册</a></li>
-                <li><a href="#mail-login" data-toggle="tab">邮箱注册</a></li>
+                <li class="active"><a href="#cellphone-login" data-toggle="tab"><i class="icon icon_phone"></i> 手机号码注册</a></li>
+                <li><a href="#mail-login" data-toggle="tab"><i class="icon icon_mail"></i> 邮箱注册</a></li>
             </ul>
             <div id="MyTabContent" class="tab-content">
                 <div class="tab-pane fade in active" id="cellphone-login">
@@ -66,55 +66,28 @@
                         <input type="hidden" name="refer" value="site/">
                     </form>
                 </div>
-                <div class="tab-pane fade in active" id="mail-login">
-                    <form id="form-login" method="post" action="passport/ajax-login">
-                        <div id='login-error' class="error-tip"></div>
-                        <table border="0" cellspacing="0" cellpadding="0">
-                            <tbody>
-                            <tr>
-                                <th>账户</th>
-                                <td width="245">
-                                    <input id="email" type="text" name="email" placeholder="电子邮箱/手机号" autocomplete="off" value=""></td>
-                                <td>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>密码</th>
-                                <td width="245">
-                                    <input id="password" type="password" name="password" placeholder="请输入密码" autocomplete="off">
-                                </td>
-                                <td>
-                                </td>
-                            </tr>
-                            <tr id="tr-vcode" style="display:none;" >
-                                <th>验证码</th>
-                                <td width="245">
-                                    <div class="valid">
-                                        <input type="text" name="vcode"><img class="vcode" src="passport/vcode?_=1411476793" width="85" height="35" alt="">
-                                    </div>
-                                </td>
-                                <td>
-                                </td>
-                            </tr>
-                            <tr class="find">
-                                <th></th>
-                                <td>
-                                    <div>
-                                        <label class="checkbox" for="chk11"><input style="height: auto;" id="chk11" type="checkbox" name="remember_me" >记住我</label>
-                                        <a href="passport/forget-pwd">忘记密码？</a>
-                                    </div>
-                                </td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <th></th>
-                                <td width="245"><input class="confirm" type="submit" value="登  录"></td>
-                                <td></td>
-                            </tr>
-                            </tbody>
-                        </table>
-                        <input type="hidden" name="refer" value="site/">
-                    </form>
+                <div class="tab-pane fade" id="mail-login">
+                    <div class="form_body" data-view="emailRegister">
+                        <div class="input_item clearfix" data-propertyname="email" data-controltype="Email" style="display: block;">
+                            <input type="text" class="input input_white" name="" placeholder="请输入常用邮箱地址" data-required="required" autocomplete="off">
+                        </div>
+                        <div class="input_item clearfix" data-propertyname="password" data-controltype="Password" style="display: block;">
+                            <input type="password" class="input input_white" name="" placeholder="请输入密码" data-required="required" autocomplete="off">
+                        </div>
+                        <div class="input_item clearfix" data-propertyname="type" data-controltype="Switch" style="display: block;">
+                            <input type="button" class="btn btn_outline btn_lg" value="找工作" data-myvalue="0">
+                            <input type="button" class="btn btn_outline btn_lg last_child" value="招人" data-myvalue="1">
+                        </div>
+                        <div class="input_item clearfix" data-propertyname="protocol" data-controltype="CheckBox" style="display: block;">
+                            <label for="checkbox2" class="box_checkbox">
+                                <span class="checkbox_icon" style="background-position: -13px 3px;"></span><input type="checkbox" value="" id="checkbox2" class="checkbox" data-myvalue="agred" data-text="我已阅读并同意" checked="checked">我已阅读并同意
+                                <a href="http://www.lagou.com/privacy.html" target="_blank" style="color:#00b38a">《拉勾用户协议》</a>
+                            </label>
+                        </div>
+                        <div class="input_item clearfix" data-propertyname="submit" data-controltype="Botton" style="display: block;">
+                            <input type="button" class="btn btn_green btn_active btn_block btn_lg" value="注&nbsp;册">
+                        </div>
+                    </div>
                 </div>
             </div>
     </div>
@@ -122,8 +95,18 @@
         <img src="https://www.lgstatic.com/passport/static/pc/modules/common/img/divider-login_3362138.jpg" alt="分割线">
     </div>
     <div class="reg">
-        <p>还没有账号？<br>赶快免费注册一个吧！</p>
-        <a class="reg-btn" href="#">立即免费注册</a>
+        <div class="right_area fl">
+            <h5>使用以下帐号直接登录:</h5>
+            <ul class="vender_login clearfix">
+                <li><a href="/oauth20/auth_sinaWeiboProvider.html" title="使用新浪微博帐号登录" class="vender_icon icon_sina" target="_blank"></a></li>
+                <li><a href="/oauth20/auth_qqProvider.html" title="使用腾讯QQ帐号登录" class="vender_icon icon_tencent" target="_blank"></a></li>
+                <li class="last_child"><a href="/oauth20/auth_weixinProvider.html" class="vender_icon icon_wechat" title="使用微信帐号登录" target="_blank"></a></li>
+            </ul>
+            <div class="qrcode">
+                <img src="https://www.lgstatic.com/passport/static/pc/modules/common/img/qrcode_0ec6bff.jpg" alt="二维码">
+                <p>[ 扫码下载拉勾APP ]</p>
+            </div>
+        </div>
     </div>
 </div>
 <script src="jquery.min.js"></script>
