@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>标签页</title>
+    <link href="bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <ul id="myTab" class="nav nav-tabs">
+            <li class="active"><a href="#home" data-toggle="tab">Home</a></li>
+            <li><a href="#profile" data-toggle="tab">profile</a></li>
+        </ul>
+        <div id="MyTabContent" class="tab-content">
+            <div class="tab-pane fade in active" id="home">
+                <p>hello,欢迎</p>
+                <p>hello,欢迎</p>
+                <p>hello,欢迎</p>
+                <p>hello,欢迎</p>
+                <p>hello,欢迎</p>
+                <p>hello,欢迎</p>
+                <p>hello,欢迎</p>
+                <p>hello,欢迎</p>
+            </div>
+            <div class="tab-pane fade" id="profile">
+            <p>1111111111hello,欢迎</p>
+            <p>1111111111hello,欢迎</p>
+            <p>1111111111hello,欢迎</p>
+            <p>hello,欢迎</p>
+            <p>hello,欢迎</p>
+            <p>hello,欢迎</p>
+            <p>hello,欢迎</p>
+            <p>hello,欢迎</p>
+        </div>
+        </div>
+    </div>
+<script src="jquery.min.js"></script>
+<script src="bootstrap.min.js"></script>
+<script>
+    $("#myTab a:last").tab("show");
+    $('a[data-toggle="tab"]').on("shown.bs.tab",function(e){
+        alert("切换了");
+    });
+</script>
+</body>
+</html>
