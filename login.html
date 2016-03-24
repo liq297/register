@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html class="login-alone">
+<head>
+    <meta charset="UTF-8">
+    <title>找项目-握手网</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="screen.css">
+    <link rel="stylesheet" href="login.css">
+
+</head>
+<body>
+<div class="logina-main main clearfix">
+    <div class="tab-con">
+        <form action="javascript:;">
+            <div class="form_body" style="padding-top:40px" data-view="loginView">
+                <div class="input_item clearfix" data-propertyname="username" data-controltype="Phone" style="display: block;">
+                    <input type="text" class="input input_white" id="" name="" placeholder="请输入已验证手机/邮箱" data-required="required" autocomplete="off">
+                </div>
+                <div class="input_item clearfix" data-propertyname="password" data-controltype="Password" style="display: block;">
+                    <input type="password" class="input input_white" id="" name="" placeholder="请输入密码" data-required="required" autocomplete="off">
+                </div>
+                <div class="input_item clearfix" data-propertyname="request_form_verifyCode" data-controltype="VerifyCode" style="display:none;">
+                    <input type="text" class="input input_white fl" style="width:130px; display:block;" name="" placeholder="请证明你不是机器人" data-required="required" autocomplete="off">
+                    <img src="" alt="" class="yzm">
+                    <a href="javascript:;" class="reflash"></a>
+                </div>
+                <div class="input_item clearfix">
+                    <a href="https://passport.lagou.com/accountPwd/toReset.html" class="forgot_pwd">忘记密码？</a>
+                </div>
+                <div class="input_item clearfix" data-propertyname="submit" data-controltype="Botton" style="display: block;">
+                    <input type="submit" class="btn btn_green btn_active btn_block btn_lg" value="登&nbsp;录">
+                </div>
+                <div class="input_item clearfix">
+                    <h5 class="reg_now">还没有拉勾帐号？<a href="register.html">立即注册</a></h5>
+                </div>
+                <input type="hidden" value="" id="isVisiable_request_form_verifyCode">
+            </div>
+        </form>
+    </div>
+    <div class="divider fl">
+        <img src="https://www.lgstatic.com/passport/static/pc/modules/common/img/divider-login_3362138.jpg" alt="分割线">
+    </div>
+    <div class="reg">
+        <div class="right_area fl">
+            <h5>已有拉勾帐号:</h5>
+            <a href="https://passport.lagou.com/login/login.html" class="login_now">直接登录</a>
+            <h5>使用以下帐号直接登录:</h5>
+            <ul class="vender_login clearfix">
+                <li><a href="/oauth20/auth_sinaWeiboProvider.html" title="使用新浪微博帐号登录" class="vender_icon icon_sina" target="_blank"></a></li>
+                <li><a href="/oauth20/auth_qqProvider.html" title="使用腾讯QQ帐号登录" class="vender_icon icon_tencent" target="_blank"></a></li>
+                <li class="last_child"><a href="/oauth20/auth_weixinProvider.html" class="vender_icon icon_wechat" title="使用微信帐号登录" target="_blank"></a></li>
+            </ul>
+            <div class="qrcode">
+                <img src="https://www.lgstatic.com/passport/static/pc/modules/common/img/qrcode_0ec6bff.jpg" alt="二维码">
+                <p>[ 扫码下载拉勾APP ]</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+<footer>
+    <h4 class="slogan">— 专注互联网职业机会 —</h4>
+</footer>
+<script src="jquery.min.js"></script>
+<script src="bootstrap.min.js"></script>
+</body>
+</html>

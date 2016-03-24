@@ -1,56 +1,87 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Hiragino Sans GB","Microsoft Yahei",SimSun,Arial,"Helvetica Neue",Helvetica;
+    color: #333;
+    /* word-wrap: break-word; */
+    /* -webkit-font-smoothing: antialiased; */
+}
+
+html {
+    font-size: 14px;
+}
 html,body{
     background:url(mac+coffee.jpg);
     background-size: cover;
 }
 
-
-.main-navigation{
-    text-align:center;
-    background: #ffffff;
-    border-top: 1px  #ebebeb;
-    border-bottom:3px solid #e1e1e1;
-    margin:15px;
-
-}
-
-.menu{
-    padding:0;
-    margin:0;
-}
-
-.main-navigation .menu li.nav-current{
-    border-bottom:3px solid #e67e22;
-    margin-bottom:-2px;
-}
-
-.main-navigation .menu li{
-    list-style: none;
-    display:inline-block;
-    position: relative;
-}
-
-.main-navigation .menu li a{
-    color: #505050;
-    line-height: 4em;
-    display:block;
-    padding:0 31px;
+.input_item+.input_item {
+    margin-top: 20px;
 }
 
 .right_area {
     width: 160px;
-    margin-left: 40px;
+    margin-left: 80px;
     color: #777;
 }
 
 .fl {
     float: left;
 }
+
+div {
+    display: block;
+}
+
+.logina-main .divider img {
+    margin-top: 40px;
+}
+img {
+    border: 0;
+    vertical-align: top;
+    display: inline-block;
+}
+.logina-main .right_area h5 {
+    margin-top: 30px;
+    color: #777;
+}
+h5 {
+    font-size: 14px;
+}
+h4 {
+    font-size: 16px;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 10px 0;
+    font-weight: 400;
+}
+
+.logina-main .right_area .login_now {
+    display: inline-block;
+    height: 22px;
+    font-size: 16px;
+    color: #00b38a;
+    padding-right: 23px;
+    background: url(https://www.lgstatic.com/passport/static/pc/modules/common/img/icon-arrow-right_f36c0d6.png) right center no-repeat;
+}
+a {
+    background-color: transparent;
+    outline: 0;
+    text-decoration: none;
+}
+
 .vender_login {
     margin-top: 10px;
 }
 .clearfix {
     zoom: 1;
 }
+
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+
 .vender_login li {
     float: left;
     width: 44px;
@@ -107,6 +138,7 @@ li .icon_mail {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+     margin-bottom: 10px;
 }
 
 .input {
@@ -126,7 +158,25 @@ li .icon_mail {
     outline: 0;
 }
 
-.input {
+.input_group input {
+    float: left;
+}
+
+.logina-main .input_group>input.first_child {
+    width: 162px;
+}
+
+.input_group>input.last_child {
+    font-size: 14px;
+    width: 110px;
+    padding: 0;
+}
+.logina-main .input_group>input:last-child {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.logina-main .input {
     width: 272px;
 }
 .input_white {
@@ -143,7 +193,7 @@ button, input{
     border: 1px solid #ededed;
     font-family: inherit;
 }
- .btn_outline {
+.logina-main .btn_outline {
     width: 140px;
     margin-top: 0;
     margin-right: 15px;
@@ -151,18 +201,22 @@ button, input{
     border-color: #dce4e6;
     font-size: 14px;
 }
+
+
 .btn.btn_outline {
-    color: #fff;
     background-color: transparent;
 }
-
+.btn_lg {
+    font-size: 18px;
+    line-height: 46px;
+    height: 46px;
+}
 
 .box_checkbox {
     height: 14px;
     line-height: 14px;
     z-index: 2;
     margin-bottom: 10px;
-    padding-left: 5px;
     color: #777;
 }
 
@@ -179,11 +233,22 @@ button, input{
     background-repeat: no-repeat;
     background-position: 0 0;
 }
+.checkbox{
+    display: inline-block;
+}
+
 .btn_green {
     color: #00b38a;
     border-color: #00b38a;
     background-color: #fff;
 }
+
+.btn_green.btn_active {
+    color: #fff;
+    border-color: #00b38a;
+    background-color: #00b38a;
+}
+
 .btn_block {
     display: block;
     width: 100%;
@@ -213,7 +278,87 @@ li {
     text-align: -webkit-match-parent;
 }
 
+.form_head {
+    position: relative;
+    /* z-index: 1; */
+    height: 33px;
+    margin-bottom: 29px;
+    border-bottom: 1px solid #ebebeb;
+}
 
+ul {
+    margin: 0;
+    padding: 0;
+}
+.logina-main .form_head .tab_active {
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    background-color: #00b38a;
+    width: 150px;
+    height: 1px;
+}
+
+.logina-main .form_head li.active {
+    color: #00b38a;
+}
+
+.logina-main .form_head .tab_active:before, .logina-main .form_head .tab_active:after {
+    position: absolute;
+    z-index: 2;
+    top: -12px;
+    left: 50%;
+    margin-left: -3px;
+    content: '';
+    width: 0;
+    height: 0;
+    line-height: 0;
+    border: 6px solid transparent;
+    border-bottom-color: #00b38a;
+}
+
+.logina-main .form_head .tab_active:after {
+    z-index: 3;
+    top: -10px;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    border: 6px solid transparent;
+    border-bottom-color: #fff;
+}
+
+
+
+.logina-main .form_head li {
+
+    line-height: 24px;
+    position: relative;
+    float: left;
+    width: 150px;
+    height: 33px;
+    cursor: pointer;
+    text-align: center;
+    vertical-align: middle;
+    color: #333;
+    margin-bottom: 2px;
+}
+li {
+    list-style: none;
+}
+
+.clearfix:after {
+    clear: both;
+}
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+
+.slogan {
+    margin-top: 40px;
+    text-align: center;
+    color: #d1d1d1;
+}
 .main{width:820px; margin:100px auto 0;}
 .main .login-tab{height:46px;}
 .main .login-tab li{float:left; width:98px; height:46px; line-height:46px; border-radius:3px 3px 0 0; background-color:#e0f3ff; border:1px solid #c3dff0; border-bottom:none; margin-right:8px; color:#116ea9; font-size:16px; text-align:center; cursor:pointer;list-style: none;}
@@ -230,10 +375,8 @@ li {
 
 
 .tabs{border:0px solid #ffffff;margin:100px;width:300px;padding:20px 40px 50px ;}
-.nav-tabs {
-    border-bottom: none;
-}
-.nav-tabs li{background:#FFFFFF;border:0px solid #ffffff;line-height:30px;padding:0 20px;display:inline-block;border-right:0px solid #ffffff;border-bottom:0px solid #a0b3d6;float:left;}
+
+
 
 .main .reg-tip{width: 288px;margin-left: 44px;margin-top: -15px;margin-bottom: 10px;}
 
@@ -247,7 +390,7 @@ li {
 .logina-main .find td{padding:0;}
 
 .logina-main .find label{ margin-right:85px;}
-.logina-main .reg{text-align: center; min-height:290px; padding:20px 40px 0 120px; background:url(../images/login-sep.png) no-repeat 0 50%;}
+.logina-main .reg{text-align: center; min-height:290px; padding:20px 40px 0 120px; }
 .logina-main .reg p{font-size:17px; font-style:italic; line-height:30px; padding-bottom:30px;}
 .logina-main .error-tip{
     color: #DC0000;
